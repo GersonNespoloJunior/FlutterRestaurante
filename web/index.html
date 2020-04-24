@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Academia">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+
+  <title>Academia</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+  <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-firestore.js"></script>
+  <script src="main.dart.js" type="application/javascript"></script>
+
+  <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
+       
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js');
+      });
+    }
+
+    var firebaseConfig = {
+      apiKey: "AIzaSyAQMtQAWec1Ugr_kkeiZU37bKiB4OWgK9s",
+      authDomain: "projetowebapp.firebaseapp.com",
+      databaseURL: "https://projetowebapp.firebaseio.com",
+      projectId: "projetowebapp",
+      storageBucket: "projetowebapp.appspot.com",
+      messagingSenderId: "878324680530",
+      appId: "1:878324680530:web:f29bdb1d261e181f1b9c8b",
+      measurementId: "G-NZ9630GC19"
+    }
+    firebase.initializeApp(firebaseConfig);    
+
+  </script>
+  <script src="main.dart.js" type="application/javascript"></script>
+</body>
+</html>
